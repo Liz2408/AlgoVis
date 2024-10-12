@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Edtech website with sorting visualization.">
+    <meta name="author" content="jasra" >
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+    <link rel="stylesheet" href="assets/css/ollie.css">
+	
+
+</head>
+<body>
+<section class="section" id="visualizer">
+    <div class="container">
+        <h3 class="section-title">Bubble Sort</h3>
+          
+  <div class="nav-container">
+  <!--CREATING OPTIONS PANE-->
+  <div class="navbar" id="navbar">
+   
+   <!--CREATING GENERATE ARRAY BUTTON-->  
+   
+   <span class="options">
+     <select name="select sort algorithm" id="menu" class="algo-menu" style="color:black;">
+       <option value="1">Bubble Sort</option>
+     </select>
+   </span>
+
+   <!--DROP-DOWN LIST TO SELECT ARRAY SIZE-->
+   <span class="options">
+     <select name="select array size" id="menu" class="size-menu" style="color:black;">
+       <option value="0">Array size</option>
+       <option value="5">5</option>
+       <option value="10">10</option>
+       <option value="15">15</option>
+       <option value="20">20</option>
+       <option value="30">30</option>
+       <option value="40">40</option>
+       <option value="50">50</option>
+       <option value="60">60</option>
+       <option value="70">70</option>
+       <option value="80">80</option>
+       <option value="90">90</option>
+       <option value="100">100</option>
+     </select>
+   </span>
+
+   <!--DROP-DOWN LIST TO SELECT VISUALIZATION SPEED-->
+   <span class="options">
+     <select name="speed of visualization" id="menu" class="speed-menu" style="color:black;">
+       <option value="0">Speed</option>
+       <option value="0.5">0.50x</option>
+       <option value="0.75">0.75x</option>
+       <option value="1">1.00x</option>
+       <option value="2">2.00x</option>
+       <option value="4">4.00x</option>
+     </select>
+   </span>
+
+   <!--CREATING SORTING BUTTON-->
+   <a id="random" onclick="RenderScreen()" style="background-color: #ff6666;">Generate array</a>
+   <a class="start" style="background-color: #ff6666;">Sort</a>
+
+   <a class="icon"><i class="fa fa-bars"></i></a>
+
+ </div>
+
+</div>
+
+<!--LINKING EXTERNAL SCRIPTS-->
+<script src="app2.js"></script>
+<script src="helper2.js"></script>
+<script src="sort-algorithms_2.js"></script>
+</section>
+<!------------- -->
+
+<div class="center">
+
+ <div class="array"></div>
+
+</div>
+</div>
+</section>
+</body>
+</html>
